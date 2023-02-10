@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/4015371/AndroidStudioProjects/MySupport/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.45989583333333334" />
+        <entry key="..\:/Users/4015371/AndroidStudioProjects/MySupport/app/src/main/res/layout/activity_home_screen.xml" value="0.44375" />
+        <entry key="..\:/Users/4015371/AndroidStudioProjects/MySupport/app/src/main/res/layout/activity_main.xml" value="0.3663949275362319" />
+        <entry key="..\:/Users/4015371/AndroidStudioProjects/MySupport/app/src/main/res/layout/activity_settings.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/4015371/AndroidStudioProjects/MySupport/app/src/main/res/layout/settings_activity.xml" value="0.44375" />
+        <entry key="..\:/Users/4015371/AndroidStudioProjects/MySupport/app/src/main/res/layout/settings_menu.xml" value="0.44375" />
+        <entry key="..\:/Users/4015371/AndroidStudioProjects/MySupport/app/src/main/res/menu/main.xml" value="0.44375" />
+        <entry key="..\:/Users/4015371/AndroidStudioProjects/MySupport/app/src/main/res/xml/preferences.xml" value="0.44375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
