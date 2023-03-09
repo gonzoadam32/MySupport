@@ -17,7 +17,7 @@
         <!--this list preference is for remind me option-->
         <ListPreference
             android:defaultValue="3"
-            android:dialogTitle="@string/remind_to_take_a_break"
+            android:dialogTitle="@string/remind_to_eat"
             android:entries="@array/pref_remind_me_to_take_a_break"
             android:entryValues="@array/pref_duration"
             android:key="@string/key_upload_quality"
@@ -34,42 +34,16 @@
             android:key="@string/remind_me_for_bed_time"
             android:title="@string/remind_for_bed_time" />
 
-        <!--below switch preference is
-            use for mobile data usage-->
         <SwitchPreference
-            android:defaultValue="false"
-            android:key="@string/limit_data_usage"
-            android:summary="@string/stream_video"
-            android:title="@string/limit_mobile_usage" />
+            android:id="@+id/Get_Notification"
+            android:defaultValue="true"
+            android:key="@string/remind_me_for_bed_time"
+            android:title="@string/Get_Notification"
+            android:summary="You will get a notification every hour"/>
+
 
         <!--below list preference is use for
             double tap to seek option-->
-        <ListPreference
-            android:defaultValue="1"
-            android:dialogTitle="@string/double_tap_to_seek"
-            android:entries="@array/pref_seek_values"
-            android:entryValues="@array/pref_duration"
-            android:key="@string/pref_seek_val"
-            android:summary="@string/seconds"
-            android:title="@string/double_tap_to_seek" />
-
-        <!--below option is use to create a list
-            preference for Upload preferences-->
-        <ListPreference
-            android:defaultValue="1"
-            android:dialogTitle="@string/uploads"
-            android:entries="@array/pref_uploads"
-            android:entryValues="@array/pref_duration"
-            android:key="@string/pref_uploads"
-            android:summary="@string/specify_network_prefs"
-            android:title="Uploads" />
-
-        <!--below switch pref is use for enable stats option-->
-        <SwitchPreference
-            android:defaultValue="false"
-            android:key="@string/prefs_enable_stats"
-            android:title="@string/enable_stats" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>
