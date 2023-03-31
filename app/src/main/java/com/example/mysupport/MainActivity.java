@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
         notifMsg.add("You look down on yourself, you shouldn't,there is no reason to.");
         notifMsg.add("I believe in you, me sitting on the other side of the screen typing this out, I  know you can do it.");
 
-        let randomValue = notifMsg[Math.floor(Math.random() * notifMsg.5)];
 
 
         Button btn = findViewById(R.id.LoginButton);
@@ -71,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         // setup the onClick for the button
         //
-        // eventually I thikn this needs to be on its own screen after they user logs in
+        // eventually I think this needs to be on its own screen after they user logs in
         //  so that screen comes up and in the onCreate for that activity you run this code...
         //
         // but for now launching with a button to test is fine...
@@ -103,10 +102,11 @@ public class MainActivity extends AppCompatActivity {
                 handler .post( new Runnable() {
                     @RequiresApi(api = Build.VERSION_CODES.O)
                     public void run () {
+                        int randomValue =(int) Math.floor(Math.random() * 5);
                         Notification.Builder builder = new Notification.Builder(MainActivity.this)
                                 .setSmallIcon(R.drawable.ic_action_name)
                                 .setContentTitle("title")
-                                .setContentText("body")
+                                .setContentText(notifMsg.get(randomValue))
                                 .setChannelId(CHANNEL_ID)
                                 .setPriority(Notification.PRIORITY_DEFAULT);
 
