@@ -34,12 +34,15 @@
             android:key="@string/remind_me_for_bed_time"
             android:title="@string/remind_for_bed_time" />
 
-        <SwitchPreference
-            android:id="@+id/Get_Notification"
-            android:defaultValue="true"
-            android:key="@string/remind_me_for_bed_time"
-            android:title="@string/Get_Notification"
-            android:summary="You will get a notification every hour"/>
+        <ListPreference
+            
+            android:defaultValue="3"
+            android:dialogTitle="@string/notifications"
+            android:entries="@array/hourly_notifications"
+            android:entryValues="@array/pref_duration"
+            android:key="@string/key_notifications"
+            android:title="@string/get_notifications"
+            android:summary="Get notifications hourly"/>
 
 
         <!--below list preference is use for
