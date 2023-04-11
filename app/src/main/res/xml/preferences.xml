@@ -35,7 +35,6 @@
             android:title="@string/remind_for_bed_time" />
 
         <ListPreference
-            
             android:defaultValue="3"
             android:dialogTitle="@string/notifications"
             android:entries="@array/hourly_notifications"

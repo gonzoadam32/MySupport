@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
     String userName;
     private final String CHANNEL_ID = "123456";
 
-    ArrayList<String> notifMsg;
+    static ArrayList<String> notifMsg;
 
     Timer mytimer = new Timer(true);
-    TimerTask mytask;
+    static TimerTask mytask;
     final Handler handler = new Handler();
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -78,9 +78,10 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 final Handler handler = new Handler();
-                if(mytask == null)
+                if(mytask == null) {
                     initializeTimerTask();
-                mytimer.schedule(mytask, 1000L, 5000L);
+                    mytimer.schedule(mytask, 2000L, 10000L);
+                }
             }
         });
     }
@@ -105,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                         int randomValue =(int) Math.floor(Math.random() * 5);
                         Notification.Builder builder = new Notification.Builder(MainActivity.this)
                                 .setSmallIcon(R.drawable.ic_action_name)
-                                .setContentTitle("title")
+                                .setContentTitle("MySupport")
                                 .setContentText(notifMsg.get(randomValue))
                                 .setChannelId(CHANNEL_ID)
                                 .setPriority(Notification.PRIORITY_DEFAULT);

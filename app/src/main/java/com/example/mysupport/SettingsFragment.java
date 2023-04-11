@@ -26,7 +26,7 @@ public class SettingsFragment extends PreferenceFragment{
 
         Preference t =  p.getPreference(0);
         if(t instanceof android.preference.ListPreference) {
-            listPreference = (ListPreference) t;
+           // listPreference = (ListPreference) t;
         }
 
         //listPreference = (ListPreference) findPreference("@string/key_notifications");
